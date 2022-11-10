@@ -1,9 +1,6 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 
 class WelcomeProps extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         const { name, heroName } = this.props
         return (

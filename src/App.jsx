@@ -2,6 +2,7 @@ import { Counter } from "./components/Counter";
 import Greet from "./components/Greet";
 import { GreetProps } from "./components/GreetProps";
 import Message from "./components/Message";
+import UserGreeting from "./components/UserGreeting";
 import Welcome from "./components/Welcome";
 import WelcomeProps from './components/WelcomeProps';
 
@@ -23,6 +24,7 @@ function App() {
         <Counter/>
       </GreetProps>
       <WelcomeProps name ={'Bruce Wayne'} heroName='Batman'/>
+      <UserGreeting />
     </div>
   )
 }
