@@ -1,13 +1,13 @@
+import Person from "./Person";
+
 function NameList() {
 	const persons = [
-		{ name: "Bruce", age: 30, skill: "React" },
-		{ name: "clark", age: 25, skill: "Angular" },
-		{ name: "Diana", age: 28, skill: "vue" },
+		{ id: 1, name: "Bruce", age: 30, skill: "React" },
+		{ id: 2, name: "clark", age: 25, skill: "Angular" },
+		{ id: 3, name: "Diana", age: 28, skill: "vue" },
 	];
 	const personList = persons.map((person) => (
-		<h2>
-			I'm {person.name}. I'm {person.age}. I know {person.skill}
-		</h2>
+		<Person key={person.id} person={person} />
 	));
 	return <div>{personList}</div>;
 }

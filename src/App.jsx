@@ -6,6 +6,10 @@ import NameList from "./components/NamesList";
 import UserGreeting from "./components/UserGreeting";
 import Welcome from "./components/Welcome";
 import WelcomeProps from "./components/WelcomeProps";
+import Stylesheet from "./components/Stylesheet";
+import Inline from "./components/Inline";
+import "./appStyles.css";
+import styles from "./appStyles.module.css";
 
 function App() {
 	return (
@@ -27,6 +31,10 @@ function App() {
 			<WelcomeProps name={"Bruce Wayne"} heroName="Batman" />
 			<UserGreeting />
 			<NameList />
+			<Stylesheet primary={true} />
+			<Inline />
+			<h1 className="error">Error</h1>
+			<h1 className={styles.success}>success</h1>
 		</div>
 	);
 }
