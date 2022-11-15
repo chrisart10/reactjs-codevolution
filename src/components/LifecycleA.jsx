@@ -20,7 +20,11 @@ class LifecycleA extends Component {
 		return null;
 	}
 	componentDidMount() {
+		// Targeting element after mount element
 		console.log("LifecycleA componentDidMount");
+		const h1 = document.querySelector("h1");
+		h1.textContent = "LifecycleA render And updated";
+		console.log(h1);
 	}
 	shouldComponentUpdate() {
 		console.log("LifecycleA shouldComponentUpdate");
