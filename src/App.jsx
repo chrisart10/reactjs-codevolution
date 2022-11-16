@@ -14,14 +14,17 @@ import Form from "./components/Form";
 import LifecycleA from "./components/LifecycleA";
 import FragmentDemo from "./components/FragmentDemo";
 import Table from "./Table";
-
+import StateLab from "./components/StateLab";
+import ParenComp from "./components/ParentComp";
 function App() {
 	return (
 		<div className="App">
 			{/* <Form /> */}
 			{/* <LifecycleA /> */}
-			<FragmentDemo />
-			<Table />
+			{/* <FragmentDemo /> */}
+			{/* <Table /> */}
+			{/* <StateLab /> */}
+			<ParenComp />
 		</div>
 	);
 }
