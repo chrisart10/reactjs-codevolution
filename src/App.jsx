@@ -19,6 +19,7 @@ import ParenComp from "./components/ParentComp";
 import RefsDemo from "./components/RefsDemo";
 import FRInput from "./components/FRInputs";
 import FRParentInput from "./components/FRParentInput";
+import PortalDemo from "./components/PortalDemo";
 function App() {
 	return (
 		<div className="App">
@@ -29,7 +30,8 @@ function App() {
 			{/* <StateLab /> */}
 			{/* <ParenComp /> */}
 			{/* <RefsDemo /> */}
-			<FRParentInput />
+			{/* <FRParentInput /> */}
+			<PortalDemo value={"Hello World from portal"} />
 		</div>
 	);
 }
