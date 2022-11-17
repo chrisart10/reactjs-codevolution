@@ -17,6 +17,8 @@ import Table from "./Table";
 import StateLab from "./components/StateLab";
 import ParenComp from "./components/ParentComp";
 import RefsDemo from "./components/RefsDemo";
+import FRInput from "./components/FRInputs";
+import FRParentInput from "./components/FRParentInput";
 function App() {
 	return (
 		<div className="App">
@@ -26,7 +28,8 @@ function App() {
 			{/* <Table /> */}
 			{/* <StateLab /> */}
 			{/* <ParenComp /> */}
-			<RefsDemo />
+			{/* <RefsDemo /> */}
+			<FRParentInput />
 		</div>
 	);
 }
