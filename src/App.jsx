@@ -16,6 +16,7 @@ import FragmentDemo from "./components/FragmentDemo";
 import Table from "./Table";
 import StateLab from "./components/StateLab";
 import ParenComp from "./components/ParentComp";
+import RefsDemo from "./components/RefsDemo";
 function App() {
 	return (
 		<div className="App">
@@ -24,7 +25,8 @@ function App() {
 			{/* <FragmentDemo /> */}
 			{/* <Table /> */}
 			{/* <StateLab /> */}
-			<ParenComp />
+			{/* <ParenComp /> */}
+			<RefsDemo />
 		</div>
 	);
 }
