@@ -50,10 +50,10 @@ function App() {
 				<Hero heroName="Joker" />
 			</ErrorBoundary> */}
 			{/* <ClickCounter name="vishwas" />
-			<HoverCounter name="vishwas" /> */}
-			{/* <ClickCounterTwo />
-			<HoverCounterTwo />
-			<User render={(isLoggedIn) => (isLoggedIn ? "vishwas" : "Guest")} /> */}
+			<HoverCounter name="vishwas" />
+			 <ClickCounterTwo />
+			<HoverCounterTwo /> */}
+			<User render={(isLoggedIn) => (isLoggedIn ? "vishwas" : "Guest")} />
 			<Counter2
 				render={(count, incrementCount) => (
 					<ClickCounterTwo
