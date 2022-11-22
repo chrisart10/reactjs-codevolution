@@ -30,6 +30,8 @@ import User from "./components/User";
 import Counter2 from "./components/Counter2";
 import { UserProvider } from "./components/UserContext";
 import ComponentC from "./components/ComponentC";
+import PostList from "./components/PostList";
+import PostForm from "./components/PostForm";
 function App() {
 	return (
 		<div className="App">
@@ -72,9 +74,11 @@ function App() {
 					/>
 				)}
 			/> */}
-			<UserProvider value="Vishwas">
+			{/* <UserProvider value="Vishwas">
 				<ComponentC />
-			</UserProvider>
+			</UserProvider> */}
+			{/* <PostList /> */}
+			<PostForm />
 		</div>
 	);
 }
