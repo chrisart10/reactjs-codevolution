@@ -19,6 +19,9 @@ import CounterThree from "./components2/CounterThree";
 import ComponentU from "./components2/ComponentU";
 import ComponentX from "./components2/ComponentX";
 import ComponentZ from "./components2/ComponentZ";
+import DataFetchingOne from "./components2/DataFecthingOne";
+import DataFetchingTwo from "./components2/DataFetchingTwo";
+import ParentComponent from "./components2/ParentComponent";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -62,13 +65,15 @@ function App() {
 			{/* <CounterOne /> */}
 			{/* <CounterTwo /> */}
 			{/* <CounterThree /> */}
-
+			{/* 
 			<CountContext.Provider value={{ count, dispatch }}>
 				count: {count}
 				<ComponentU />
 				<ComponentX />
 				<ComponentZ />
-			</CountContext.Provider>
+			</CountContext.Provider> */}
+			{/* <DataFetchingOne /> */}
+			<ParentComponent />
 		</div>
 	);
 }
