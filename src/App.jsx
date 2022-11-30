@@ -11,7 +11,11 @@ import HookMouse from "./components2/HookMouse";
 import IntervalClassCounter from "./components2/IntervalClassCounter";
 import IntervalHookContainer from "./components2/IntervalHookCounter";
 import MouseContainer from "./components2/MouseContainer";
+import DataFetching from "./components2/DataFetching";
+import ComponentC from "./components2/ComponentC";
 
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 function App() {
 	return (
 		<div className="App">
@@ -24,8 +28,14 @@ function App() {
 			{/* <HookCounterOne /> */}
 			{/* <ClassMouse /> */}
 			{/* <MouseContainer /> */}
-			<IntervalClassCounter />
-			<IntervalHookContainer />
+			{/* <IntervalClassCounter />
+			<IntervalHookContainer /> */}
+			{/* <DataFetching /> */}
+			<UserContext.Provider value={"Vishwas"}>
+				<ChannelContext.Provider value={"Codevolution"}>
+					<ComponentC />
+				</ChannelContext.Provider>
+			</UserContext.Provider>
 		</div>
 	);
 }
