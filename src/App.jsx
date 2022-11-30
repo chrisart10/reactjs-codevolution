@@ -13,6 +13,7 @@ import IntervalHookContainer from "./components2/IntervalHookCounter";
 import MouseContainer from "./components2/MouseContainer";
 import DataFetching from "./components2/DataFetching";
 import ComponentC from "./components2/ComponentC";
+import CounterOne from "./components2/CounterOne";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -31,11 +32,12 @@ function App() {
 			{/* <IntervalClassCounter />
 			<IntervalHookContainer /> */}
 			{/* <DataFetching /> */}
-			<UserContext.Provider value={"Vishwas"}>
+			{/* <UserContext.Provider value={"Vishwas"}>
 				<ChannelContext.Provider value={"Codevolution"}>
 					<ComponentC />
 				</ChannelContext.Provider>
-			</UserContext.Provider>
+			</UserContext.Provider> */}
+			<CounterOne />
 		</div>
 	);
 }
