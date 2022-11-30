@@ -15,6 +15,7 @@ import DataFetching from "./components2/DataFetching";
 import ComponentC from "./components2/ComponentC";
 import CounterOne from "./components2/CounterOne";
 import CounterTwo from "./components2/CounterTwo";
+import CounterThree from "./components2/CounterThree";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -39,7 +40,8 @@ function App() {
 				</ChannelContext.Provider>
 			</UserContext.Provider> */}
 			{/* <CounterOne /> */}
-			<CounterTwo />
+			{/* <CounterTwo /> */}
+			<CounterThree />
 		</div>
 	);
 }
