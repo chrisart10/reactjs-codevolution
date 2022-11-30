@@ -14,6 +14,7 @@ import MouseContainer from "./components2/MouseContainer";
 import DataFetching from "./components2/DataFetching";
 import ComponentC from "./components2/ComponentC";
 import CounterOne from "./components2/CounterOne";
+import CounterTwo from "./components2/CounterTwo";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -37,7 +38,8 @@ function App() {
 					<ComponentC />
 				</ChannelContext.Provider>
 			</UserContext.Provider> */}
-			<CounterOne />
+			{/* <CounterOne /> */}
+			<CounterTwo />
 		</div>
 	);
 }
