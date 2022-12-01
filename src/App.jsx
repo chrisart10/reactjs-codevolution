@@ -27,6 +27,9 @@ import FocusInput from "./components2/FocusInput";
 import HookTimer from "./components2/HookTimer";
 import DocTitleOne from "./components2/DocTitleOne";
 import DocTitleTwo from "./components2/DocTitleTwo";
+import CounterA from "./components2/CounterA";
+import CounterB from "./components2/CounterB";
+import UserForm from "./components2/UserForm";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -82,8 +85,11 @@ function App() {
 			{/* <Counter /> */}
 			{/* <FocusInput /> */}
 			{/* <HookTimer /> */}
-			<DocTitleOne />
-			<DocTitleTwo />
+			{/* <DocTitleOne />
+			<DocTitleTwo /> */}
+			{/* <CounterA />
+			<CounterB /> */}
+			<UserForm />
 		</div>
 	);
 }
