@@ -1,3 +1,7 @@
+# Notes:
+
+I re-write Parent and child components to keep name consinstency.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

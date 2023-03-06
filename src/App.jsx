@@ -6,6 +6,10 @@ import React from "react";
 import ParentOne from "./componentsRender/Optimization/ParentOne";
 import ChildOne from "./componentsRender/Optimization/ChildOne";
 import GrandParent from "./componentsRender/Optimization/GrandParent";
+import ParentTwo from "./componentsRender/Optimization/ParentTwo";
+import ParentThree from "./componentsRender/Incorrect Optimization/ParentThree";
+import ParentFour from "./componentsRender/Incorrect Optimization/ParentFour";
+import ParentFive from "./componentsRender/Incorrect Optimization/ParentFive";
 
 function App() {
   return (
@@ -15,7 +19,15 @@ function App() {
       {/* <ArrayUseState /> */}
 
       {/* This doesn't re-render "unecesary" because is pass as props. */}
-      <GrandParent />
+      {/* <GrandParent /> */}
+
+      {/* <ParentTwo /> */}
+
+      {/* <ParentThree /> */}
+
+      {/* <ParentFour /> */}
+
+      <ParentFive />
     </div>
   );
 }
