@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo, useCallback } from "react";
 import { MemoizedChildFive } from "./ChildFive";
 
 function ParentFive() {
@@ -9,7 +9,10 @@ function ParentFive() {
     fname: "Bruce",
     lname: "Wayne",
   };
+
+  const momoizedPerson = useMemo(() => person, []);
   const handlerClick = () => {};
+  const memoizedHandlerClick = useCallback(handlerClick, []);
   return (
     <div>
       <button onClick={() => setCount((c) => c + 1)}>Count - {count}</button>
@@ -17,8 +20,8 @@ function ParentFive() {
       <MemoizedChildFive
         name={name}
         // Both provocate re-render. Because is a new object.
-        person={person}
-        handlerClick={handlerClick}
+        person={momoizedPerson}
+        handlerClick={memoizedHandlerClick}
       />
     </div>
   );
